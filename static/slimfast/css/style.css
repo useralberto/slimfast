@@ -118,3 +118,114 @@ footer {
 .content-slider2 img{
   width: 40%;
 } 
+.title-img img{
+  width: 23%;
+}
+
+.card-fondo{
+  background-image: url('/static/slimfast/img/sliderRecetas/fondo_slide1.jpg');
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100% ;
+  text-align: center;
+  margin: 0, auto;
+}
+
+.recetas{
+ background-image: url('/static/slimfast/img/sliderRecetas/fondo_slide1.jpg'); 
+ height: 381px;
+ width: 500px;
+ border-radius: 2%;
+ background-repeat: no-repeat;
+ text-align: center;
+ margin: 0, auto;
+ background-size: cover;
+}
+.recetas2{
+  background-image: url('/static/slimfast/img/sliderRecetas/fondo_slide2.jpg'); 
+  height: 380px;
+  width: 400px;
+  /* border-radius: 1%; */
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: 0, auto;
+  background-size: cover;
+}
+
+.marcars img{
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: 0, auto;
+  background-size: cover;
+  padding: 0;
+}
+
+.carousel-multi-item .carousel-indicators li {
+  height: 1rem;
+  width: 1rem;
+  max-width: 1rem;
+  background-color: #f0eeee;
+  margin-bottom: -3.75rem;
+  border-radius: 50%;
+}
+
+.carousel-multi-item .carousel-indicators .active {
+  height: 1rem;
+  width: 1rem;
+  max-width: 1rem;
+  background-color: #dc3545;
+  -webkit-border-radius: 50%;
+  border-radius: 50%
+}
+
+.carousel-multi-item .controls-top {
+  text-align: center;
+  margin-bottom: 1.88rem
+}
+
+.carousel-multi-item .carousel-indicators {
+  margin-bottom: -2em
+}
+
+.carousel-multi-item .card-cascade.narrower {
+  margin-top: 1.25rem;
+  margin-bottom: .3rem
+}
+
+@media (min-width: 768px) {
+  .carousel-multi-item .col-md-4 {
+      float:left;
+      width: 33.333333%;
+      max-width: 100%
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .carousel-multi-item .carousel-indicators li {
+    margin-bottom:-1.88rem
+  }
+}
+
+.carousel-thumbnails .carousel-indicators {
+  white-space: nowrap;
+  overflow-x: auto;
+  position: static;
+  left: initial;
+  width: initial;
+  margin-left: initial;
+  margin-right: initial
+}
+
+.carousel-thumbnails .carousel-indicators>li {
+  width: initial;
+  height: initial;
+  text-indent: initial
+}
+
+.carousel-thumbnails .carousel-indicators>li .active img {
+  opacity: 1
+}
