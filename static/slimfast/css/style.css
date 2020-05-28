@@ -1,0 +1,108 @@
+
+@font-face {
+  font-family: Blogger_Sans;
+  src: url("/static/vendors/fonts/Blogger_Sans.otf"), 
+  url("/static/vendors/fonts/Blogger_Sans-Medium.otf"), 
+  url("/static/vendors/fonts/Blogger_Sans-Medium_Italic.otf"),  
+  url("/static/vendors/fonts/Blogger_Sans-Bold.otf"), 
+  url("/static/vendors/fonts/Blogger_Sans-Bold_Italic.otf"),  
+  url("/static/vendors/fonts/Blogger_Sans-Italic.otf"),  
+  url("/static/vendors/fonts/Blogger_Sans-Light.otf");  
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Blogger_Sans, Arial, sans-serif;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+a{
+  transition: .3s all ease;
+}
+footer {
+  position: absolute;
+  /* bottom: 0; */
+  width: 100%;
+  padding: 1rem;
+}
+
+/* .menu-fixed {
+  position:fixed;
+  z-index:1000;
+  top:0;
+  max-width:1000px;
+  left:0;
+  width:100%;
+}*/
+
+.navbar-light .navbar-toggler {
+  color: #000;
+  border-color: rgba(0,0,0,0);
+}
+
+.navbar-extras{
+  background-color: #fff; 
+  box-shadow: 0.5px 0.5px 10px rgb(192, 192, 191);
+  padding: 0.6rem;
+  border-radius: 0.7rem!important;
+}
+
+.footer-top{
+  background-color: #f0eeee;
+}
+
+.circle-icons {
+  /* display: inline-block; */
+  position: relative;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.circle-icons img {
+  margin: 0 auto;
+  top: 25%;
+  right: 0;
+  left: 0;
+  position: absolute;
+  height: 60px;
+  width: 60px;
+}
+
+.circle-icons-dis{
+  background-color: #f0eeee;
+}
+
+.bolder-fonts{
+  font-weight: bolder;
+}
+
+.marco-radius, .marco-radius:after {
+  border-radius: 50%;
+  display: inline-block;
+  padding: 1rem;
+}
+
+.marco-radius{
+  background-color: transparent;
+  border-top: 5px solid #dc3545!important;;
+  border-right: 5px solid #f0eeee;
+  border-bottom: 5px solid #dc3545!important;;
+  border-left: 5px solid #dc3545!important;;
+}
+
+.marco-radius-simples, .marco-radius-simples:after {
+  border-radius: 50%;
+  display: inline-block;
+  padding: 1rem;
+}
+
+.marco-radius-simples{
+  border: 2px solid #f0eeee;
+}
