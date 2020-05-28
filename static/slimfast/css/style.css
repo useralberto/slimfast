@@ -1,13 +1,13 @@
 
 @font-face {
   font-family: Blogger_Sans;
-  src: url("/static/vendors/fonts/Blogger_Sans.otf"), 
-  url("/static/vendors/fonts/Blogger_Sans-Medium.otf"), 
-  url("/static/vendors/fonts/Blogger_Sans-Medium_Italic.otf"),  
-  url("/static/vendors/fonts/Blogger_Sans-Bold.otf"), 
-  url("/static/vendors/fonts/Blogger_Sans-Bold_Italic.otf"),  
-  url("/static/vendors/fonts/Blogger_Sans-Italic.otf"),  
-  url("/static/vendors/fonts/Blogger_Sans-Light.otf");  
+  src: url("static/vendors/fonts/Blogger_Sans.otf"), 
+  url("static/vendors/fonts/Blogger_Sans-Medium.otf"), 
+  url("static/vendors/fonts/Blogger_Sans-Medium_Italic.otf"),  
+  url("static/vendors/fonts/Blogger_Sans-Bold.otf"), 
+  url("static/vendors/fonts/Blogger_Sans-Bold_Italic.otf"),  
+  url("static/vendors/fonts/Blogger_Sans-Italic.otf"),  
+  url("static/vendors/fonts/Blogger_Sans-Light.otf");  
 }
 
 *{
@@ -123,7 +123,7 @@ footer {
 }
 
 .card-fondo{
-  background-image: url('/static/slimfast/img/sliderRecetas/fondo_slide1.jpg');
+  background-image: url('static/slimfast/img/sliderRecetas/fondo_slide1.jpg');
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -136,7 +136,7 @@ footer {
 }
 
 .recetas{
- background-image: url('/static/slimfast/img/sliderRecetas/fondo_slide1.jpg'); 
+ background-image: url('static/slimfast/img/sliderRecetas/fondo_slide1.jpg'); 
  height: 381px;
  width: 500px;
  border-radius: 2%;
@@ -146,7 +146,7 @@ footer {
  background-size: cover;
 }
 .recetas2{
-  background-image: url('/static/slimfast/img/sliderRecetas/fondo_slide2.jpg'); 
+  background-image: url('static/slimfast/img/sliderRecetas/fondo_slide2.jpg'); 
   height: 380px;
   width: 400px;
   /* border-radius: 1%; */
