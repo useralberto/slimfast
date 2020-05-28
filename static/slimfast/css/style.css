@@ -106,3 +106,15 @@ footer {
 .marco-radius-simples{
   border: 2px solid #f0eeee;
 }
+
+.content-slider{
+
+}
+
+.content-slider img{
+  width: 20%;
+}
+
+.content-slider2 img{
+  width: 40%;
+} 
