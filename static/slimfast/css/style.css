@@ -1,13 +1,13 @@
 
 @font-face {
   font-family: Blogger_Sans;
-  src: url("static/vendors/fonts/Blogger_Sans.otf"), 
-  url("static/vendors/fonts/Blogger_Sans-Medium.otf"), 
-  url("static/vendors/fonts/Blogger_Sans-Medium_Italic.otf"),  
-  url("static/vendors/fonts/Blogger_Sans-Bold.otf"), 
-  url("static/vendors/fonts/Blogger_Sans-Bold_Italic.otf"),  
-  url("static/vendors/fonts/Blogger_Sans-Italic.otf"),  
-  url("static/vendors/fonts/Blogger_Sans-Light.otf");  
+  src: url("../../vendors/fonts/Blogger_Sans.otf"), 
+  url("../../vendors/fonts/Blogger_Sans-Medium.otf"), 
+  url("../../vendors/fonts/Blogger_Sans-Medium_Italic.otf"),  
+  url("../../vendors/fonts/Blogger_Sans-Bold.otf"), 
+  url("../../vendors/fonts/Blogger_Sans-Bold_Italic.otf"),  
+  url("../../vendors/fonts/Blogger_Sans-Italic.otf"),  
+  url("../../vendors/fonts/Blogger_Sans-Light.otf");  
 }
 
 *{
