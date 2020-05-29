@@ -6,23 +6,41 @@
     <link rel="stylesheet" href="static/vendors/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/slimfast/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/svg+xml" href="static/slimfast/img/logo.svg" sizes="64x64">
     <title>SlimFast</title>
   </head>
-  <body>
+  <body id="cuerpo">
+    <div id="sidebar-wrapper">
+      <a id="menu-close" style="font-size: 27px; color: #e00434;" class="btn btn-default btn-lg pull-right toggle "><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+      <ul class="sidebar-nav">
+
+        <li class="nav-item active">
+          <a class="nav-link" data-scroll href="#product">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#works">How it works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#Recipes">Recipes</a>
+        </li>
+      </ul>
+    </div>
+    
     <div class="container">
+
       <header>
-        <nav class="navbar navbar-expand-md navbar-light mt-5 navbar-extras d-flex justify-content-between px-5">
+        <nav id="menu" class="navbar navbar-expand-md navbar-light navbar-extras d-flex justify-content-between px-5" >
           <div>
-            <a class="navbar-brand text-center" href="#">
+            <a class="navbar-brand text-center logsnav" href="#">
               <img src="static/slimfast/img/logo.svg" class="img-fluid" width="100" height="100" alt="SlimFast" title="SlimFast"> 
             </a>
           </div>
           <div>
-            <button class="navbar-toggler" type="button">
+            <button class="navbar-toggler" type="button" id="open_menu">
               <span class="navbar-toggler-icon text-danger"></span>
             </button>
 
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse ulsmenu">
               <ul class="navbar-nav">
                 <li class="nav-item active">
                   <a class="nav-link" data-scroll href="#product">Products</a>
@@ -60,7 +78,7 @@
 
           <div class="col-sm-12 text-center py-5">
             <div class="row">
-              <div class="col-sm-4">
+              <div class="col-md-4">
                 <div class="py-4" >
                   <div class="marco-radius">
                     <div class="circle-icons bg-danger">
@@ -71,7 +89,7 @@
                 <h3 class="text-danger py-3 bolder-fonts">¡Funciona!</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, obcaecati minima. Laborum aspernatur accusantium expedita voluptatem, dicta ex qui, molestias illum mollitia unde sed consectetur.</p>
               </div>
-              <div class="col-sm-4">
+              <div class="col-md-4">
                 <div class="py-4">
                   <div class="marco-radius-simples">
                     <div class="circle-icons circle-icons-dis">
@@ -82,7 +100,7 @@
                 <h3 class="text-danger py-3 bolder-fonts">¡Es flexible!</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, obcaecati minima. Laborum aspernatur accusantium expedita voluptatem, dicta ex qui, molestias illum mollitia unde sed consectetur.</p>
               </div>
-              <div class="col-sm-4">
+              <div class="col-md-4">
                 <div class="py-4">
                   <div class="marco-radius-simples">
                     <div class="circle-icons circle-icons-dis">
@@ -101,100 +119,108 @@
             <div id="carouselExampleIndicators" class="carousel slide pt-5" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <div class="col-md-4 col-sm-12" style="float:left">
-                    <div class="content-slider">
-                      <img src="static/slimfast/img/productos/shake.jpg" class="img-fluid">
-                      <h3 class="pt-5">SlimFast&#174;</h3>
-                      <h3>Original Malteada</h3>
-                      <div class="d-flex justify-content-center">
-                        <hr class="bg-primary" style="width: 20%; border:0; height: 2px;" >
+                  <div class="row">
+
+                    <div class="col-md-4 col-sm-12 producto">
+                      <div class="content-slider py-4">
+                        <img src="static/slimfast/img/productos/shake.jpg" class="img-fluid">
+                        <h3 class="pt-5">SlimFast&#174;</h3>
+                        <h3>Original Malteada</h3>
+                        <div class="d-flex justify-content-center contert-inter">
+                          <hr class="bg-primary separador">
+                        </div>
+                        <p>Sabor Chocolate</p>
                       </div>
-                      <p>Sabor Chocolate</p>
+                    </div>
+                    <div class="col-md-4 col-sm-12 producto">
+                      <div class="content-slider2 py-4">
+                        <img src="static/slimfast/img/productos/powder_strawberry.jpg" class="img-fluid">
+                        <h3 class="pt-5">SlimFast&#174;</h3>
+                        <h3>Original en polvo</h3>
+                        <div class="d-flex justify-content-center contert-inter">
+                          <hr class="bg-primary separador">
+                        </div>
+                        <p>Sabor Fresa</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 producto">
+                      <div class="content-slider py-4">
+                        <img src="static/slimfast/img/productos/shakevanilla.jpg" class="img-fluid">
+                        <h3 class="pt-5">SlimFast&#174;</h3>
+                        <h3>Original Malteada</h3>
+                        <div class="d-flex justify-content-center contert-inter">
+                          <hr class="bg-primary separador">
+                        </div>
+                        <p>Sabor VAinilla</p>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-md-4 col-sm-12" style="float:left">
-                    <div class="content-slider2">
-                      <img src="static/slimfast/img/productos/powder_strawberry.jpg" class="img-fluid">
-                      <h3 class="pt-5">SlimFast&#174;</h3>
-                      <h3>Original en polvo</h3>
-                      <div class="d-flex justify-content-center">
-                        <hr class="bg-primary" style="width: 20%; border:0; height: 2px;" >
-                      </div>
-                      <p>Sabor Fresa</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-sm-12" style="float:left">
-                    <div class="content-slider">
-                      <img src="static/slimfast/img/productos/shakevanilla.jpg" class="img-fluid">
-                      <h3 class="pt-5">SlimFast&#174;</h3>
-                      <h3>Original Malteada</h3>
-                      <div class="d-flex justify-content-center">
-                        <hr class="bg-primary" style="width: 20%; border:0; height: 2px;" >
-                      </div>
-                      <p>Sabor VAinilla</p>
-                    </div>
-                  </div>
+
                 </div>
 
                 <div class="carousel-item">
-                  <div class="col-md-4" style="float:left">
-                    <div class="content-slider">
-                      <img src="static/slimfast/img/productos/shake.jpg" class="img-fluid">
-                      <h3 class="pt-5">SlimFast&#174;</h3>
-                      <h3>Original Malteada</h3>
-                      <div class="d-flex justify-content-center">
-                        <hr class="bg-primary" style="width: 20%; border:0; height: 2px;" >
+                  <div class="row">
+
+                    <div class="col-md-4 col-sm-12 producto">
+                      <div class="content-slider py-4">
+                        <img src="static/slimfast/img/productos/shake.jpg" class="img-fluid">
+                        <h3 class="pt-5">SlimFast&#174;</h3>
+                        <h3>Original Malteada</h3>
+                        <div class="d-flex justify-content-center contert-inter">
+                          <hr class="bg-primary separador">
+                        </div>
+                        <p>Sabor Chocolate</p>
                       </div>
-                      <p>Sabor Chocolate</p>
+                    </div>
+                    <div class="col-md-4 col-sm-12 producto">
+                      <div class="content-slider2 py-4">
+                        <img src="static/slimfast/img/productos/powder_strawberry.jpg" class="img-fluid">
+                        <h3 class="pt-5">SlimFast&#174;</h3>
+                        <h3>Original en polvo</h3>
+                        <div class="d-flex justify-content-center contert-inter">
+                          <hr class="bg-primary separador">
+                        </div>
+                        <p>Sabor Fresa</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 producto">
+                      <div class="content-slider py-4">
+                        <img src="static/slimfast/img/productos/shakevanilla.jpg" class="img-fluid">
+                        <h3 class="pt-5">SlimFast&#174;</h3>
+                        <h3>Original Malteada</h3>
+                        <div class="d-flex justify-content-center contert-inter">
+                          <hr class="bg-primary separador">
+                        </div>
+                        <p>Sabor VAinilla</p>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-md-4 " style="float:left">
-                    <div class="content-slider2">
-                      <img src="static/slimfast/img/productos/powder_strawberry.jpg" class="img-fluid">
-                      <h3 class="pt-5">SlimFast&#174;</h3>
-                      <h3>Original en polvo</h3>
-                      <div class="d-flex justify-content-center">
-                        <hr class="bg-primary" style="width: 20%; border:0; height: 2px;" >
-                      </div>
-                      <p>Sabor Fresa</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4" style="float:left">
-                    <div class="content-slider">
-                      <img src="static/slimfast/img/productos/shakevanilla.jpg" class="img-fluid">
-                      <h3 class="pt-5">SlimFast&#174;</h3>
-                      <h3>Original Malteada</h3>
-                      <div class="d-flex justify-content-center">
-                        <hr class="bg-primary" style="width: 20%; border:0; height: 2px;" >
-                      </div>
-                      <p>Sabor VAinilla</p>
-                    </div>
-                  </div>
+                  
                 </div>
               </div>
-              <a class="carousel-control-prev" style="color: black;" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <i class="fa fa-chevron-left" aria-hidden="true" style="font-size: 2.5rem; color: darkgray;"></i>
+              <a class="carousel-control-prev icon-slider"  href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
               </a>
-              <a class="carousel-control-next" style="color: black;" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <i class="fa fa-chevron-right" aria-hidden="true" style="font-size: 2.5rem; color: darkgray;"></i>
+              <a class="carousel-control-next icon-slider"href="#carouselExampleIndicators" role="button" data-slide="next">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
               </a>
             </div>
 
           </div>
 
           <div class="col-sm-12 py-5 text-center" id="works">
-            <div class="title-img">
+            <div class="title-img pasos imgpasos">
               <img src="static/slimfast/img/planSlimFast/logo.jpg" class="img-fluid">
             </div>
             <div class="col-sm-12 pt-5">
               <div class="row">
-                <div class="col-sm-4">
+                <div class="col-md-4">
                   <img src="static/slimfast/img/planSlimFast/paso1.jpg"  class="img-fluid" style="opacity: 0.5;">
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-4 pt-center-pasos">
                   <img src="static/slimfast/img/planSlimFast/paso2.jpg" class="img-fluid" style="opacity: 1.5;">
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-4">
                   <img src="static/slimfast/img/planSlimFast/paso3.jpg" class="img-fluid" style="opacity: 0.5;">
                 </div>
               </div>
@@ -207,48 +233,61 @@
     <div class="col-sm-12 py-5 " id="Recipes">
       <h2 class="text-center text-danger">¡Todo lo que necesitas para perder peso y mantenerlo!</h2>
       <div class="d-flex justify-content-center text-center">
-        <div class="col-12 col-md-5 py-3">
+        <div class="col-md-12 col-lg-5 py-3">
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ducimus saepe error tenetur blanditiis commodi, hic ipsum necessitatibus iusto eveniet possimus est explicabo provident?</p>
         </div>
       </div>
-      <div class="d-flex justify-content-end">
-        <div class="row">
-          <div class="recetas mr-5">
-            <div class="text-white text-center d-flex justify-content-end pt-5">
-              <div class="col-7 pt-4">
-                <h1 class="bolder-fonts">!Guia rapida</h1>
-                <h1 class="bolder-fonts">SlimFast&#174;</h1>
-                <h1 class="bolder-fonts">Original!</h1>
-                <h5 class="bolder-fonts pt-3">¡40 años de pérdidas</h5>
-                <h5 class="bolder-fonts">de peso comprobada!</h5>
+      <div class="container">
+
+        <div class="d-flex justify-content-end">
+          <div class="row">
+            <div class="col-md-12 col-lg-6">
+
+              <div class="recetas mr-5">
+                <div class="text-white text-center d-flex justify-content-end pt-5">
+                  <div class="col-7 pt-4">
+                    <h1 class="bolder-fonts">!Guia rapida</h1>
+                    <h1 class="bolder-fonts">SlimFast&#174;</h1>
+                    <h1 class="bolder-fonts">Original!</h1>
+                    <h5 class="bolder-fonts pt-3">¡40 años de pérdidas</h5>
+                    <h5 class="bolder-fonts">de peso comprobada!</h5>
+                  </div>
+                </div>
+                <div style="display: flex; justify-content: flex-end; margin-bottom: 0;">
+                  <div class="bg-danger text-white text-center mt-3 pt-2" style="border-bottom: 1px solid; border-right: 1px solid; border-bottom-right-radius: 0.5rem;">
+                    <h5 class="px-5 pt-1 bolder-fonts" style="cursor: pointer;">¡Descargala! <i class="fa fa-long-arrow-right" aria-hidden="true" style="font-size: 26px; font-weight: lighter; "></i></h5>
+                  </div>
+                </div>
               </div>
             </div>
-            <div style="display: flex; justify-content: flex-end; margin-bottom: 0;">
-              <div class="bg-danger text-white text-center mt-3 pt-2" style="border-bottom: 1px solid; border-right: 1px solid; border-bottom-right-radius: 0.5rem;">
-                <h5 class="px-5 pt-1 bolder-fonts">¡Descargala! <i class="fa fa-long-arrow-right" aria-hidden="true" style="font-size: 26px; font-weight: lighter; "></i></h5>
+
+            <div class="col-md-12 col-lg-6 divrecta2">
+              <div class="recetas2">
+                <div class="text-white text-center d-flex justify-content-center">
+                  <div class="col-7 pt-4">
+                    <h3 class="bolder-fonts">Tortitas de papa</h3>
+                    <h3 class="bolder-fonts">con cilantro</h3>
+                  </div>
+                </div>
+                <div style="display: flex; justify-content: flex-end; margin-bottom: 0; padding-top: 13.3rem;">
+                  <div class="bg-danger text-white text-center mt-3 pt-1">
+                    <h5 class="px-5 pt-2 bolder-fonts " style="cursor: pointer;">Ver receta</h5>
+                  </div>  <div class="bg-white text-dark text-center mt-3">
+                    <h5 class="px-3  bolder-fonts ">
+                      <i class="fa fa-long-arrow-right pt-2" aria-hidden="true" style="font-size: 26px; font-weight: lighter;"></i>
+                    </h5>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="recetas2">
-            <div class="text-white text-center d-flex justify-content-center">
-              <div class="col-7 pt-4">
-                <h3 class="bolder-fonts">Tortitas de papa</h3>
-                <h3 class="bolder-fonts">con cilantro</h3>
-              </div>
-            </div>
-            <div style="display: flex; justify-content: flex-end; margin-bottom: 0; padding-top: 13.3rem;">
-              <div class="bg-danger text-white text-center mt-3 pt-1">
-                <h5 class="px-5 pt-2 bolder-fonts ">Ver receta</h5>
-              </div>  <div class="bg-white text-dark text-center mt-3">
-                <h5 class="px-3  bolder-fonts "><i class="fa fa-long-arrow-right pt-2" aria-hidden="true" style="font-size: 26px; font-weight: lighter;"></i></h5>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
+
     </div>
 
-    <div class="container pt-5 pb-5">
+    <div class="container pt-4 pb-4">
       <div class="col-sm-12 text-center pb-5 pt-3">
         <h2 class="text-danger pt-5 bolder-fonts">¡Compralo ahora!</h2>
         <div class="col-sm-12 pt-4 pb-4">
@@ -263,34 +302,34 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="row">
-                  <div class="col-sm-3 marcars">
+                  <div class="col-md-3 marcars">
                     <img src="static/slimfast/img/marcas/superama.jpg" class="img-fluid">
                   </div>
-                  <div class="col-sm-3 marcars">
+                  <div class="col-md-3 marcars pd-marcas">
                     <img src="static/slimfast/img/marcas/LOGO_WALMART_MEXICO.jpg" style="padding-top: 1rem;" class="img-fluid">
                   </div>
-                  <div class="col-sm-3 marcars">
+                  <div class="col-md-3 marcars pd-marcas">
                     <img src="static/slimfast/img/marcas/heb.jpg" style="padding-top: 1rem;" class="img-fluid">
 
                   </div>
-                  <div class="col-sm-3 marcars">
+                  <div class="col-md-3 marcars pd-marcas">
                     <img src="static/slimfast/img/marcas/chedraui.jpg" class="img-fluid">
                   </div>
                 </div>
               </div>
               <div class="carousel-item">
                 <div class="row">
-                  <div class="col-sm-3 marcars">
+                  <div class="col-md-3 marcars">
                     <img src="static/slimfast/img/marcas/superama.jpg" class="img-fluid">
                   </div>
-                  <div class="col-sm-3 marcars">
+                  <div class="col-md-3 marcars pd-marcas">
                     <img src="static/slimfast/img/marcas/LOGO_WALMART_MEXICO.jpg" style="padding-top: 1rem;" class="img-fluid">
                   </div>
-                  <div class="col-sm-3 marcars">
+                  <div class="col-md-3 marcars pd-marcas">
                     <img src="static/slimfast/img/marcas/heb.jpg" style="padding-top: 1rem;" class="img-fluid">
 
                   </div>
-                  <div class="col-sm-3 marcars">
+                  <div class="col-md-3 marcars pd-marcas">
                     <img src="static/slimfast/img/marcas/chedraui.jpg" class="img-fluid">
                   </div>
                 </div>
@@ -307,43 +346,97 @@
 
     <footer class="pt-5">
       <div class="row">
-        <div class="col-sm-12 py-5 footer-top">
+        <div class="col-sm-12 pt-5 pb-3 footer-top">
           <div class="container">
 
             <div class="row">
-              <div class="col-sm-4">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, blanditiis.</p>              
+              <div class="col-md-4 text-center pt-3 pb-4">
+                <img src="/static/slimfast/img/logo.svg" style="width: 60%;" class="img-fluid">
+                <div class="pt-4">
+                  <p style="font-size: 16px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, deleniti quae. Expedita debitis rerum officia vero eligendi, ea pariatur ipsum dolorem quae ad suscipit facere dolorum  dolorum dolorum cumque <span class="text-danger bolder-fonts">delectus culpa explicabo.</span></p>
+                </div>
+                <button class="btn btn-danger px-4 py-2 bolder-fonts mt-3" >Conoce más</button>
               </div>
-              <div class="col-sm-4">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, blanditiis.</p>              
+              <div class="col-md-4  p-4">
+                <h4 class="text-danger pb-3">Navegación</h4>
+                <div class="row">
+                  <div class="col-6">
+                    <p class="bolder-fonts">PRODUCTOS</p> 
+                    <ul style="font-size: 14px;" class="footer-menu">
+                      <li><a href="#">Original</a> </li>
+                      <li><a href="#">Advanced Nutrition</a></li>
+                      <li><a href="#">Advanced Energy</a></li>
+                      <li><a href="#">Keto</a></li>
+                      <li><a href="#">Diabetic Weight Loss</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-6">
+                    <p class="bolder-fonts">CÓMO FUNCIONA</p> 
+                    <ul style="font-size: 16px;" class="bolder-fonts footer-menu">
+                      <li><a href="#">RECETAS</a></li>
+                      <li><a href="#">BLOG</a></li>
+                    </ul>
+                  </div>
+                  <div class="text-center col-12 pt-3">
+                    <span class="bolder-fonts"> 2020 &#169; SlimFast </span>The Brand Industry
+                  </div>
+                </div>
               </div>
-              <div class="col-sm-4">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, blanditiis.</p>              
+              <div class="col-md-4 text-center">
+                <h4 class="bolder-fonts pt-5 text-danger pb-2">¡Mantante al día!</h4>
+                <form>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control imput-footer" placeholder="E-mail">
+                    <div class="input-group-append">
+                      <span class="input-group-text px-4" id="basic-addon2" style="padding-top: 0.7rem; padding-bottom: 0.7rem;">
+                        <svg class="bi bi-arrow-right" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"/>
+                          <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"/>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </form>
+                <div class="col-12 pt-3">
+                  <h4 class="text-danger bolder-fonts">Follow us!</h4>
+                  <div class="social">
+                    <a href="#"><img src="static/slimfast/img/footer/facebook.jpg" class="img-fluid"></a>
+                    <a href="#"><img src="static/slimfast/img/footer/Pinterest.jpg" class="img-fluid"></a>
+                    <a href="#"><img src="static/slimfast/img/footer/Youtube.jpg" class="img-fluid"></a>
+                    <a href="#"><img src="static/slimfast/img/footer/Instagram.jpg" class="img-fluid"></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-12">
-          <div class="row">
-            <div class="col-sm-8">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nemo nisi laborum voluptates, non omnis? Cumque pariatur dolores, asperiores maiores molestias quaerat totam enim minus, odit veritatis sunt perferendis amet!.</p>
+        <div class="col-sm-12 pt-4">
+          <div class="container">
+
+            <div class="row">
+              <div class="col-lg-9 col-md-9" style="font-size: 12px;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nemo nisi laborum voluptates, non omnis? Cumque pariatur dolores, asperiores maiores molestias quaerat totam enim minus, odit veritatis sunt perferendis amet!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, placeat natus animi harum repellat aliquid?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae totam labore illum sint. Nulla, animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, fugit reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, maiores?</p>
+              </div>
+              <div class="col-lg-3 col-md-3 text-right" >
+                <ul class="text-danger bolder-fonts footer-menu2">
+                  <li><a href="#">¿Pregunta o comentarios?</a></li>
+                  <li><a href="#">Contáctanos</a></li>
+                </ul>
+              </div>
             </div>
-            <div class="col-sm-4">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, necessitatibus.</p>
-            </div>
+
           </div>
         </div>
       </div>
     </footer>
+
+   
+
+
   </body>
   <script type="text/javascript" src="static/vendors/js/jquery-3.2.1.slim.min.js"></script>
   <script type="text/javascript" src="static/vendors/js/popper.min.js"></script>
   <script type="text/javascript" src="static/vendors/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
-  <script>
-    var scroll = new SmoothScroll('a[href*="#"]', {
-	    speed: 1000,
-	    speedAsDuration: true
-    });
-  </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+  <script type="text/javascript" src="static/slimfast/js/acciones.js"></script>
 </html>
