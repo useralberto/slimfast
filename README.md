@@ -1,4 +1,4 @@
-Este archivo es mejor visualizado usando un [lector de Markdown](https://dillinger.io/)
+
 
 #Ejercicio de desarrollo Front End (SlimFast)
 
@@ -17,5 +17,3 @@ Desarrollar la vista proporcionada en el `.pdf` tomando en cuenta que debe visua
 5. El tiempo que "sobre" de la fecha contemplada de entrega será tomado en consideración para evaluar al desarrollador por lo que se recomienda entregar cuanto antes.
 
 6. La entrega puede ser a través de un .zip, un repositorio git o el montaje de un [GitHub Page](https://pages.github.com/).
-
-**_Cualquier duda o comentario, favor de comunicarse a [bnavarrete@thebrandindustry.com](mailto:bnavarrete@thebrandindustry.com)_**
